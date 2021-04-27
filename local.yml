@@ -23,13 +23,13 @@
     become: yes
     run_once: yes
     fetch: src=/home/strn/docker/nginx-proxy-manager/letsencrypt/live/npm-43/cert.pem dest=buffer/ flat=yes
-    when: inventory_hostname == 'docker01'
+#    when: inventory_hostname == 'docker01'
 
   - name: Fetch privkey from docker01
     become: yes
     run_once: yes
     fetch: src=/home/strn/docker/nginx-proxy-manager/letsencrypt/live/npm-43/privkey.pem dest=buffer/ flat=yes
-    when: inventory_hostname == 'docker01'
+#    when: inventory_hostname == 'docker01'
 
   - name: b64 encode cert
     copy:
