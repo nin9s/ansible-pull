@@ -1,20 +1,2 @@
-[dns]
-lxdns01
-lxdns02
-
-[docker]
-docker01
-
-[mnt]
-monitoring
-
-[fortigate]
-192.168.254.254 fortios_access_token=pmhk68d805rH4gwHxm8hGxw765Q3w3
-
-[fortigate:vars]
-ansible_network_os=fortinet.fortios.fortios
-ansible_python_interpreter = /usr/bin/python3.6
-
-
-#[docker:vars]
-#ansible_network_os=debian
+[local]
+127.0.0.1
